@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Room</th>
+            <th>Available</th>
+            <th>Number of Persons</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td id=@room.Id class="room-name">@room.Name</td>
+                @if (room.Status == true)
+                {
+                    <td>
+                        <div id=@room.Id class="circle active">
+                        </div>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <div id=@room.Id class="circle not-active">
+                        </div>
+                    </td>
+                }
+                <td>
+                    @room.NoPerson
+                </td>
+                <td>
+                    @room.Temperature
+                </td>
+                <td>
+                    @room.Humidity
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

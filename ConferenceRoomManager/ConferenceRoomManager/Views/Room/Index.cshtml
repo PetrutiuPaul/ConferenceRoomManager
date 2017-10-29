@@ -1,0 +1,36 @@
+﻿@model List<ConferenceRoomManager.Models.RoomViewModel>
+
+<h3></h3>
+
+
+<input type="search" id="search" class="search" placeholder="Search" style="margin:29px"/>
+<input type="checkbox" id="available"/> <span>Just available rooms</span>
+<button class="btn btn-success notify-btn">Global Notify</button>
+
+<div class="col-md-12">
+    <div id="rooms" class="col-md-9">
+        @Html.Partial("AllRooms", Model)
+    </div>
+
+    <table class="table table-bordered col-md-2" style="width:15%">
+        <thead>
+            <tr>
+                <th style="text-align:center">
+                    Notify me
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var room in Model)
+            {
+                <tr>
+                    <td align="center">
+                        <div id=@room.Id class="glyphicon glyphicon-plus add-notification notification" style="cursor:pointer"></div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<input type="hidden" id="getActiveRoomSrc" value="/Room/AllRooms" />

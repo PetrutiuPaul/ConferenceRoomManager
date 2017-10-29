@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceRoomManager", "ConferenceRoomManager\ConferenceRoomManager.csproj", "{F094CAF5-0E32-40BD-A788-77B64BFBD50F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F094CAF5-0E32-40BD-A788-77B64BFBD50F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F094CAF5-0E32-40BD-A788-77B64BFBD50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F094CAF5-0E32-40BD-A788-77B64BFBD50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F094CAF5-0E32-40BD-A788-77B64BFBD50F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB9C6990-9D1A-4BA2-B8BB-B9B280BC65D4}
+	EndGlobalSection
+EndGlobal

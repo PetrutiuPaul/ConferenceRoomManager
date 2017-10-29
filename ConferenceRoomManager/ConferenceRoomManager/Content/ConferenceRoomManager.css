@@ -1,0 +1,36 @@
+﻿.circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    /* width and height can be anything, as long as they're equal */
+}
+
+.not-active{
+    background-color:green;
+}
+
+.active{
+    background-color:red
+}
+
+.login-form {
+    margin-left: 36%;
+    /* text-align: center; */
+    vertical-align: middle;
+    border: 1px black solid;
+    box-shadow: grey 0px 0px 10px;
+    margin-right: 34%;
+    margin-top: 10%;
+    padding:30px;
+    background-color:white;
+}
+
+body {
+    background-color:#f7f7f7
+}
+
+.notify-btn {
+    text-align: right;
+    float: right;
+    margin: 25px 14% 0px 0px;
+}
